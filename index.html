@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (min-width:320px) and (max-width:375px) {
+           .cycle{
+            background-color: aqua;
+           img{
+               width: 300px;
+           display: block;
+            }
+
+           } 
+        }
+        @media screen and (min-width:375px) and (max-width:425px) {
+           .cycle{
+            background-color: rgb(255, 0, 255);
+            img{
+               width: 300px;
+           display: block;
+          margin: auto;
+            } 
+        } 
+        }
+        @media screen and (min-width:425px) and (max-width:768px) {
+           .cycle{
+            background-color: rgb(255, 255, 0);
+           } 
+        }
+        @media screen and (min-width:768px) and (max-width:1023px) {
+           .cycle{
+            background-color: rgba(240, 27, 87, 0.764);
+           } 
+           img{
+            display: block;
+          margin: auto;
+           }
+        }
+        @media screen and (min-width:1024px) {
+           .cycle{
+            background-color: rgba(240, 27, 87, 0.167);
+           } 
+           img{
+            display: inline;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="cycle">
+        <img src="./bicycle.png" height="400px"> 
+        <img src="./bicycle.png" height="400px">
+        <img src="./bicycle.png" height="400px">
+        <img src="./bicycle.png" height="400px">
+    </div>
+</body>
+</html>
